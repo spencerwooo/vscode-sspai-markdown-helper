@@ -6,6 +6,7 @@
 
 <em>VS Code Markdown Helper for sspai.com</em>
 
+[![Visual Studio Marketplace](https://img.shields.io/badge/Visual%20Studio-Marketplace-007acc.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=spencerwoo.vscode-sspai-markdown-helper)
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/spencerwoo.vscode-sspai-markdown-helper.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=spencerwoo.vscode-sspai-markdown-helper)
 [![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/stars/spencerwoo.vscode-sspai-markdown-helper.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=spencerwoo.vscode-sspai-markdown-helper)
 ![License](https://img.shields.io/github/license/spencerwooo/vscode-sspai-markdown-helper.svg?style=flat-square)

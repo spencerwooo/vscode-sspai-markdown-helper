@@ -1,10 +1,15 @@
-<div align="middle">
+<div align="center">
 
 <img src="https://raw.githubusercontent.com/spencerwooo/vscode-sspai-markdown-helper/master/images/icon.png" alt="icon" width="100px">
 
 <h1>少数派 Matrix 文章撰写助手</h1>
 
 <em>VS Code Markdown Helper for sspai.com</em>
+
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/spencerwoo.vscode-sspai-markdown-helper.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=spencerwoo.vscode-sspai-markdown-helper)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/stars/spencerwoo.vscode-sspai-markdown-helper.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=spencerwoo.vscode-sspai-markdown-helper)
+![License](https://img.shields.io/github/license/spencerwooo/vscode-sspai-markdown-helper.svg?style=flat-square)
+[![GitHub Stars](https://img.shields.io/github/stars/spencerwooo/vscode-sspai-markdown-helper.svg?style=social)](https://github.com/spencerwooo/vscode-sspai-markdown-helper)
 
 </div>
 

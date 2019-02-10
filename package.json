@@ -17,7 +17,7 @@
 	"keywords": ["markdown", "sspai", "matrix"],
 	"icon": "images/icon.png",
 	"galleryBanner": {
-			"color": "#373737",
+			"color": "#4d4d4d",
 			"theme": "dark"
 	},
 	"repository": {

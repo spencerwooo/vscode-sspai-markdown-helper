@@ -4,11 +4,11 @@
 
 <h1>少数派 Matrix 文章撰写助手</h1>
 
-<strong><p>VS Code Markdown Helper for <em>sspai.com</em></p></strong>
+<em>VS Code Markdown Helper for sspai.com</em>
 
 </div>
 
-##### 注：本插件与少数派官方无关，由个人开发者（我）凭兴趣开发。
+###### 注：本插件与少数派官方无关，由个人开发者（我）凭兴趣开发。[详见免责](#免责-disclaimer)。
 
 ## 功能 Features
 
@@ -26,7 +26,7 @@
 
 具体地：
 
-### 生成文章库骨架
+### 生成文章文件夹骨架
 
 ![](images/demo/demo.gif)
 
@@ -41,6 +41,15 @@
 └── post.md
 
 1 directory, 2 files
+```
+
+并生成如下的文章（即 `post.md` 中的内容）：
+
+```markdown
+<!-- Put your banner image on top of the post. -->
+![](image/banner.png)
+<!-- Replace it with your own banner. -->
+# 文章标题
 ```
 
 其中，`post.md` 是文章主体，`image/` 为文章图片库。（助手并不会生成 `banner.png`，仅作示范用。）
@@ -77,6 +86,18 @@
     ├── image/
     └── Post3.md
 ...
+```
+
+3. 与少数派富文本编辑器相对应，推荐文章主体中 Markdown 格式：
+
+```markdown
+# 文章标题
+
+## 大标题
+
+### 中标题
+
+### 小标题
 ```
 
 ## 免责 Disclaimer

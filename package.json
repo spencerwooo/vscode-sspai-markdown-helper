@@ -1,8 +1,13 @@
 {
-	"name": "vscode-sspai-markdown-style",
-	"displayName": "vscode-sspai-markdown-style",
-	"description": "A markdown preview style configured to match sspai's website article",
+	"name": "vscode-sspai-markdown-helper",
+	"displayName": "vscode-sspai-markdown-helper",
+	"description": "Generate sspai matrix posts and match markdown preview style with sspai's website",
 	"version": "0.0.1",
+	"license": "MIT",
+	"author": {
+		"name": "spencerwooo"
+	},
+	"publisher": "spencerwooo",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
@@ -10,14 +15,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:sspai.newPost"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
-		}]
+		"markdown.previewStyles": [
+			"./style.css"
+		],
+		"commands": [
+			{
+				"command": "sspai.newPost",
+				"title": "New sspai post"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
@@ -27,10 +37,13 @@
 		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"tslint": "^5.12.1",
+		"@types/mocha": "^2.2.42",
 		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28"
+	},
+	"dependencies": {
+		"@types/mkdirp": "^0.5.2"
 	}
 }

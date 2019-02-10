@@ -2,7 +2,7 @@
 	"name": "vscode-sspai-markdown-helper",
 	"displayName": "Markdown helper for sspai.com",
 	"description": "Generate sspai matrix posts and match markdown preview style with sspai's website",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"license": "MIT",
 	"author": {
 		"name": "spencerwooo"
@@ -14,20 +14,23 @@
 	"categories": [
 		"Other"
 	],
-	"keywords": ["markdown", "sspai", "matrix"],
+	"keywords": [
+		"markdown",
+		"sspai",
+		"matrix"
+	],
 	"icon": "images/icon.png",
 	"galleryBanner": {
-			"color": "#4d4d4d",
-			"theme": "dark"
+		"color": "#4d4d4d",
+		"theme": "dark"
 	},
 	"repository": {
-			"type": "git",
-			"url": "https://github.com/spencerwooo/vscode-sspai-markdown-helper.git"
+		"type": "git",
+		"url": "https://github.com/spencerwooo/vscode-sspai-markdown-helper.git"
 	},
 	"homepage": "https://github.com/spencerwooo/vscode-sspai-markdown-helper",
 	"bugs": {
-			"url":
-					"https://github.com/spencerwooo/vscode-sspai-markdown-helper/issues"
+		"url": "https://github.com/spencerwooo/vscode-sspai-markdown-helper/issues"
 	},
 	"activationEvents": [
 		"onCommand:sspai.newPost"

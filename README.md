@@ -1,6 +1,6 @@
 <div align="middle">
 
-<img src="images/icon.png" alt="icon" width="100px">
+<img src="https://raw.githubusercontent.com/spencerwooo/vscode-sspai-markdown-helper/master/images/icon.png" alt="icon" width="100px">
 
 <h1>少数派 Matrix 文章撰写助手</h1>
 
@@ -28,7 +28,7 @@
 
 ### 生成文章文件夹骨架
 
-![](images/demo/demo.gif)
+![](https://raw.githubusercontent.com/spencerwooo/vscode-sspai-markdown-helper/master/images/demo/demo.gif)
 
 方法：`Ctrl + Shift + P` → 输入「sspai」，选择「New sspai post」，并在接下来的页面中依次输入「文章文件夹名称」、「文章文件名」、「文章标题」。（文章文件名不需要带后缀）
 
@@ -60,11 +60,11 @@
 
 #### 引用
 
-![](images/demo/quote.png)
+![](https://github.com/spencerwooo/vscode-sspai-markdown-helper/raw/master/images/demo/quote.png)
 
 #### 链接
 
-![](images/demo/link.png)
+![](https://github.com/spencerwooo/vscode-sspai-markdown-helper/raw/master/images/demo/link.png)
 
 等等。
 

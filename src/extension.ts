@@ -76,6 +76,8 @@ export function activate(context: vscode.ExtensionContext) {
 							vscode.window.showErrorMessage('Error! ' + err);
 						} else {
 							vscode.window.showInformationMessage('Post successfully generated!', 'OK');
+							// Refresh file explorer view after generation
+							vscode.commands.executeCommand("workbench.files.action.refreshFilesExplorer");
 
 							let openPostPath = vscode.Uri.file(postPath);
 							vscode.workspace.openTextDocument(openPostPath).then(postDoc => {

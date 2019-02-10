@@ -16,6 +16,12 @@
 
 ###### 注：本插件与少数派官方无关，由个人开发者（我）凭兴趣开发。[详见免责](#免责-disclaimer)。
 
+## 安装 Installation
+
+[![Visual Studio Marketplace](https://img.shields.io/badge/Visual%20Studio-Marketplace-007acc.svg?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=spencerwoo.vscode-sspai-markdown-helper)
+
+*推荐：全局禁用（Disable）本插件，仅在文档库下启用（Enable），[详见推荐配置 Recommendations](#推荐配置-recommendations)。*
+
 ## 功能 Features
 
 请注意，**Matrix 文章撰写助手**：

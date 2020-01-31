@@ -18,9 +18,9 @@
 
 ## 安装 Installation
 
-<a href="https://marketplace.visualstudio.com/items?itemName=spencerwoo.vscode-sspai-markdown-helper"><img src="https://raw.githubusercontent.com/spencerwooo/vscode-sspai-markdown-helper/master/images/vsmp.svg" alt="Available on the VS Marketplace" width="250px" /></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=spencerwoo.vscode-sspai-markdown-helper"><img src="https://raw.githubusercontent.com/spencerwooo/vscode-sspai-markdown-helper/master/images/vsmp.svg?sanitize=true" alt="Available on the VS Marketplace" width="250px" /></a>
 
-*推荐：全局禁用（Disable）本插件，仅在文档库下启用（Enable），[详见推荐配置 Recommendations](#推荐配置-recommendations)。*
+<h6>推荐：全局禁用（Disable）本插件，仅在文档库下启用（Enable），详见：<a href="#推荐配置-recommendations">推荐配置 Recommendations</a>。<h6>
 
 ## 功能 Features
 

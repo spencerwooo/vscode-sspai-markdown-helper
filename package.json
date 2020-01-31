@@ -2,7 +2,7 @@
 	"name": "vscode-sspai-markdown-helper",
 	"displayName": "Markdown helper for sspai.com",
 	"description": "Generate sspai matrix posts and match markdown preview style with sspai's website",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"license": "MIT",
 	"author": {
 		"name": "spencerwooo"

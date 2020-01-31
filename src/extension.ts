@@ -25,32 +25,41 @@ export function activate(context: vscode.ExtensionContext) {
 			title: ''
 		};
 
+		// Get current date
+		let monthFormat = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+
+		let dateTime = new Date();
+		let year = dateTime.getFullYear().toString().slice(-2);
+		let month = dateTime.getMonth();
+		let date = dateTime.getDate().toString();
+		let today = year + monthFormat[month] + date;
+
 		vscode.window.showInputBox({
-			prompt: 'Which folder do you want to keep the post?',
-			placeHolder: ''
+			prompt: '📦 输入少数派文章顶层文件夹名称？（用于存放文章 Markdown 文件与图片素材 /image）',
+			value: today + '_我的少数派文章'
 		}).then((folder) => {
 			if (!folder) {
-				vscode.window.showErrorMessage('No folder name entered');
+				vscode.window.showErrorMessage('❌ 未输入文件夹名称');
 				return;
 			}
 			options.folder = folder;
 			return vscode.window.showInputBox({
-				prompt: 'What is your file name?',
-				placeHolder: ''
+				prompt: '📖 输入少数派文章文件名（即：文件名.md）',
+				placeHolder: 'MyPaiPost'
 			});
 		}).then((post) => {
 			if (!post) {
-				vscode.window.showErrorMessage('No post name entered');
+				vscode.window.showErrorMessage('❌ 未输入文件名称');
 				return;
 			}
 			options.post = post;
 			return vscode.window.showInputBox({
-				prompt: 'What is your post\'s title?',
-				placeHolder: ''
+				prompt: '📑 输入少数派文章标题',
+				placeHolder: '我的少数派文章'
 			});
 		}).then((title) => {
 			if (!title) {
-				vscode.window.showErrorMessage('No title entered');
+				vscode.window.showErrorMessage('❌ 未输入文章标题');
 				return;
 			}
 			options.title = title;
@@ -60,10 +69,9 @@ export function activate(context: vscode.ExtensionContext) {
 
 			let imagePath = path.join(workspaceRoot, options.folder, 'image');
 			let postPath = path.join(workspaceRoot, options.folder, options.post + '.md');
-			let postContent = "<!-- Put your banner image on top of the post. -->\n"
-				+ "![](image/banner.png)\n"
-				+ "<!-- Replace it with your own banner. -->\n"
-				+ "# " + options.title;
+			let postContent = "![](image/banner.png)\n"
+				+ "\n"
+				+ "# " + options.title + "\n";
 
 			mkdirp(imagePath, (err) => {
 				if (err) {
@@ -75,7 +83,7 @@ export function activate(context: vscode.ExtensionContext) {
 							console.error(err);
 							vscode.window.showErrorMessage('Error! ' + err);
 						} else {
-							vscode.window.showInformationMessage('Post successfully generated!', 'OK');
+							vscode.window.showInformationMessage('✅ 成功生成新文章目录', 'OK');
 							// Refresh file explorer view after generation
 							vscode.commands.executeCommand("workbench.files.action.refreshFilesExplorer");
 

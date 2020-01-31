@@ -43,7 +43,7 @@
 		"commands": [
 			{
 				"command": "sspai.newPost",
-				"title": "New sspai post"
+				"title": "🍳 创建新的少数派文章"
 			}
 		]
 	},

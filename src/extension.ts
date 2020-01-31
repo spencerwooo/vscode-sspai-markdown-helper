@@ -25,13 +25,19 @@ export function activate(context: vscode.ExtensionContext) {
 			title: ''
 		};
 
-		// Get current date
 		let monthFormat = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
 
+		// Get current date
 		let dateTime = new Date();
 		let year = dateTime.getFullYear().toString().slice(-2);
 		let month = dateTime.getMonth();
 		let date = dateTime.getDate().toString();
+
+		// Add leading '0' to days with single digit
+		if (date.length < 2) {
+			date = '0' + date;
+		}
+		// Concat into leading folder name
 		let today = year + monthFormat[month] + date;
 
 		vscode.window.showInputBox({
@@ -45,7 +51,7 @@ export function activate(context: vscode.ExtensionContext) {
 			options.folder = folder;
 			return vscode.window.showInputBox({
 				prompt: '📖 输入少数派文章文件名（即：文件名.md）',
-				placeHolder: 'MyPaiPost'
+				placeHolder: 'Post'
 			});
 		}).then((post) => {
 			if (!post) {
@@ -55,7 +61,7 @@ export function activate(context: vscode.ExtensionContext) {
 			options.post = post;
 			return vscode.window.showInputBox({
 				prompt: '📑 输入少数派文章标题',
-				placeHolder: '我的少数派文章'
+				placeHolder: '我的文章标题'
 			});
 		}).then((title) => {
 			if (!title) {

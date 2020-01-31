@@ -4,7 +4,7 @@
 
 <h1>少数派 Matrix 文章撰写助手</h1>
 
-<em>VS Code Markdown Helper for sspai.com</em>
+📌 <em>VS Code Markdown Helper for sspai.com</em>
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/spencerwoo.vscode-sspai-markdown-helper?color=%23494ca2&label=VS%20Marketplace&logo=Visual%20Studio&style=flat-square)](https://marketplace.visualstudio.com/items?itemName=spencerwoo.vscode-sspai-markdown-helper)
 [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/spencerwoo.vscode-sspai-markdown-helper?style=flat-square&color=%23f39422)](https://marketplace.visualstudio.com/items?itemName=spencerwoo.vscode-sspai-markdown-helper)
